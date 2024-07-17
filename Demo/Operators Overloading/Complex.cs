@@ -18,6 +18,7 @@ namespace Demo.Operators_Overloading
 
         #region Operators Overloading
         // overloading operator : must be non private class member function
+        
         #region Binary Operators
         public static Complex operator +(Complex left, Complex right)
         {
@@ -34,6 +35,26 @@ namespace Demo.Operators_Overloading
             {
                 Real = (left?.Real ?? 0) - (right?.Real ?? 0),
                 Imag = (left?.Imag ?? 0) - (right?.Imag ?? 0)
+            };
+        }
+        #endregion
+
+        #region Unary Operators
+        public static Complex operator ++(Complex C)
+        {
+            return new Complex()
+            {
+                Real = (C?.Real ?? 0) + 1,
+                Imag = (C?.Imag ?? 0)
+            };
+        }
+
+        public static Complex operator --(Complex C)
+        {
+            return new Complex()
+            {
+                Real = (C?.Real ?? 0) - 1,
+                Imag = (C?.Imag ?? 0)
             };
         } 
         #endregion
