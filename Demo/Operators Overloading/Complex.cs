@@ -56,7 +56,25 @@ namespace Demo.Operators_Overloading
                 Real = (C?.Real ?? 0) - 1,
                 Imag = (C?.Imag ?? 0)
             };
-        } 
+        }
+        #endregion
+
+        #region Comparison Operators [Relational Operators]
+        public static bool operator > (Complex left , Complex right)
+        {
+            if(left?.Real == right?.Real) 
+                return left?.Imag > right?.Imag;
+            else
+                return left?.Real > right?.Real;
+        }
+
+        public static bool operator < (Complex left, Complex right)
+        {
+            if (left?.Real == right?.Real)
+                return left?.Imag < right?.Imag;
+            else
+                return left?.Real < right?.Real;
+        }
         #endregion
         #endregion
     }

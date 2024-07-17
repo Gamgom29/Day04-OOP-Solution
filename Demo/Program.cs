@@ -30,6 +30,15 @@ namespace Demo
             //Console.WriteLine($"C3 = {C3}"); 
             #endregion
 
+            #region Comparison operators [Relational]
+            //if(C1 > C2)
+            //    Console.WriteLine($"C1 Is Greater Than C2");
+            //else if(C1 < C2)
+            //    Console.WriteLine("C1 Is Less Than C2");
+            //else
+            //    Console.WriteLine("C1 Is Equal Than C2"); 
+            #endregion
+
         }
     }
 }
