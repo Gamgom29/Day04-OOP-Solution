@@ -18,7 +18,7 @@ namespace Demo.Operators_Overloading
 
         #region Operators Overloading
         // overloading operator : must be non private class member function
-        
+
         #region Binary Operators
         public static Complex operator +(Complex left, Complex right)
         {
@@ -60,15 +60,15 @@ namespace Demo.Operators_Overloading
         #endregion
 
         #region Comparison Operators [Relational Operators]
-        public static bool operator > (Complex left , Complex right)
+        public static bool operator >(Complex left, Complex right)
         {
-            if(left?.Real == right?.Real) 
+            if (left?.Real == right?.Real)
                 return left?.Imag > right?.Imag;
             else
                 return left?.Real > right?.Real;
         }
 
-        public static bool operator < (Complex left, Complex right)
+        public static bool operator <(Complex left, Complex right)
         {
             if (left?.Real == right?.Real)
                 return left?.Imag < right?.Imag;
@@ -76,6 +76,21 @@ namespace Demo.Operators_Overloading
                 return left?.Real < right?.Real;
         }
         #endregion
+
+
+        #endregion
+
+        #region Casting operators overloading
+        // Overloadnig Casting Operator : Create Non private Class member Function
+        public static /*int*/ explicit operator int (Complex C)
+        {
+            return (C?.Real ?? 0);
+        }
+        public static /*string*/ explicit operator string (Complex C)
+        {
+            return C?.ToString() ?? string.Empty;
+        }
         #endregion
     }
 }
+ 

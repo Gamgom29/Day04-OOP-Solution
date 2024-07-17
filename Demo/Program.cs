@@ -6,8 +6,8 @@ namespace Demo
     {
         static void Main(string[] args)
         {
-            Complex C1 = new Complex() { Real = 2 , Imag = 4};
-            Complex C2 = new Complex() { Real = 3, Imag = 5 };
+            //Complex C1 = new Complex() { Real = 2 , Imag = 4};
+            //Complex C2 = new Complex() { Real = 3, Imag = 5 };
 
             #region Binary Operators
             //Complex C3 = default;
@@ -38,6 +38,28 @@ namespace Demo
             //else
             //    Console.WriteLine("C1 Is Equal Than C2"); 
             #endregion
+
+            #region Casting Operator Overloading
+            #region Example 01
+            ///Complex C1 = new Complex() { Real = 4 , Imag = 3};
+            ///int Y = (int)C1;
+            ///Console.WriteLine($"Y = {Y}");
+            ///object O1 = 5;
+            ///int X = (int)O1;  
+            #endregion
+
+            #region Example 02
+            ///Complex C1 = new Complex() { Real = 4 , Imag = 3};
+            ///string Y = (string)C1; // implicit casting
+            ///Console.WriteLine($"Y = {Y}");
+            ///object obj = "Ahmed";
+            ///string X = (string)obj;
+            ///Console.WriteLine(X); 
+            #endregion
+
+            #endregion
+
+
 
         }
     }
