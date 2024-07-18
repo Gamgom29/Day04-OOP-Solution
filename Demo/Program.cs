@@ -1,12 +1,18 @@
 ﻿using Demo.Abstraction;
 using Demo.Casting_Operator_Overloading;
 using Demo.Operators_Overloading;
+using Demo.Sealed;
 using Demo.Static;
 
 namespace Demo
 {
     internal class Program
     {
+        static void clacPayment(PaymentProcessor processor)
+        {
+            processor.ProcessPayment(100);
+        }
+
         //static void PrintShapeInfo(Shape shape)
         //{
 
@@ -127,6 +133,12 @@ namespace Demo
             //Console.WriteLine($"Circle Area {Utility.calcCircleArea(10)}");
             //Console.WriteLine(Utility.calcCircleArea(10)); 
             #endregion
+
+            #region Sealed [Class , Property , Method]
+            //ImmutableString str = new("Abelrahman");
+            //str = new("Mohamed"); 
+            #endregion
+
         }
     }
 }
