@@ -1,10 +1,19 @@
-﻿using Demo.Casting_Operator_Overloading;
+﻿using Demo.Abstraction;
+using Demo.Casting_Operator_Overloading;
 using Demo.Operators_Overloading;
 
 namespace Demo
 {
     internal class Program
     {
+        //static void PrintShapeInfo(Shape shape)
+        //{
+
+        //}
+        //static void Draw2D(IDraw2D shape)
+        //{
+        //    shape.Draw();
+        //}
         static void Main(string[] args)
         {
             //Complex C1 = new Complex() { Real = 2 , Imag = 4};
@@ -78,6 +87,33 @@ namespace Demo
             //Console.WriteLine(viewModel.Email);
             //Console.WriteLine(viewModel.Password); 
             #endregion
+
+            #region Abstraction [Abstract Class  , Abstract Methods , Abstract Property]
+            //Shape shape;
+
+            ///Shape shape = new Shape();
+            ///shape.CalcArea();
+            /// shape = new Rect() { Dim01 = 10 , Dim02 = 20};
+            ///decimal rectArea = rect.CalcArea();
+            ///decimal rectPeri = rect.Perimeter;
+            ///Console.WriteLine($"Rect Peri = {rectPeri}");
+            ///Console.WriteLine($"Rect Area = {rectArea}");
+
+            /// shape = new(20);
+            ///decimal squarePeri = square.Perimeter;
+            ///decimal squareArea = square.CalcArea();
+            ///Console.WriteLine($"Square Peri = {squarePeri}");
+            ///Console.WriteLine($"Sqaure Area = {squareArea}");
+
+            /// shape = new(10);
+            ///decimal circlePeri = circle.Perimeter;
+            ///decimal cricleArea = circle.CalcArea();
+            ///Console.WriteLine($"Circle Area = {cricleArea}");
+            ///Console.WriteLine($"Circle Peri = {circlePeri}");
+
+
+            #endregion
+
 
         }
     }
