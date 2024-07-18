@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Assignment.Project01
 {
-    internal class Point3D : IComparable
+    internal class Point3D : IComparable , ICloneable
     {
         public int X { get; set; }
         public int Y { get; set; }
@@ -38,6 +38,16 @@ namespace Assignment.Project01
                 return this.Y.CompareTo(P?.Y);
             else 
                 return this.X.CompareTo(P?.X);
+        }
+
+        public object Clone()
+        {
+            return new Point3D()
+            {
+                X = this.X,
+                Y = this.Y,
+                Z = this.Z
+            };
         }
     }
 }
