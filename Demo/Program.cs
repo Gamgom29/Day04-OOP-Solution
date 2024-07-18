@@ -1,6 +1,7 @@
 ﻿using Demo.Abstraction;
 using Demo.Casting_Operator_Overloading;
 using Demo.Operators_Overloading;
+using Demo.Static;
 
 namespace Demo
 {
@@ -114,7 +115,18 @@ namespace Demo
 
             #endregion
 
+            #region Static [Class Attribute , Property , Constructor , Method] ans Const
+            //Utility U01 = new Utility(1, 2);
+            //Utility U02 = new Utility(5, 10);
 
+
+            // The Result of calling this method will not be different by t the differrence oh the object state 
+            //Console.WriteLine(Utility.CmToInch(254));
+            //Console.WriteLine(Utility.CmToInch(254));
+            //Console.WriteLine($"Circle Area {Utility.calcCircleArea(10)}");
+            //Console.WriteLine($"Circle Area {Utility.calcCircleArea(10)}");
+            //Console.WriteLine(Utility.calcCircleArea(10)); 
+            #endregion
         }
     }
 }
