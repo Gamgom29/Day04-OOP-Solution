@@ -61,11 +61,13 @@ namespace Assignment
             #endregion
 
             #region Project02
-            Console.WriteLine($"3 * 5 = {Maths.Multiply(3,5)}");
-            Console.WriteLine($"3 + 5 = {Maths.Add(3, 5)}");
-            Console.WriteLine($"3 - 5 = {Maths.Subtract(3, 5)}");
-            Console.WriteLine($"10 / 5 = {Maths.Add(10, 5)}");
+            //Console.WriteLine($"3 * 5 = {Maths.Multiply(3,5)}");
+            //Console.WriteLine($"3 + 5 = {Maths.Add(3, 5)}");
+            //Console.WriteLine($"3 - 5 = {Maths.Subtract(3, 5)}");
+            //Console.WriteLine($"10 / 5 = {Maths.Add(10, 5)}");
+            #endregion
 
+            #region Project03
 
             #endregion
         }
