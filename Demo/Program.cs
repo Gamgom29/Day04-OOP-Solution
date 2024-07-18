@@ -1,4 +1,5 @@
-﻿using Demo.Operators_Overloading;
+﻿using Demo.Casting_Operator_Overloading;
+using Demo.Operators_Overloading;
 
 namespace Demo
 {
@@ -59,7 +60,24 @@ namespace Demo
 
             #endregion
 
+            #region Casting Operators Overloading - Business Need [Mapping]
+            //User user = new User()
+            //{
+            //    Id = 1,
+            //    Name = "Abdelrahman Gamgom",
+            //    Email = "gamgom@gmail.com",
+            //    Password = "@Password",
+            //    SecurityStump = Guid.NewGuid(),
+            //};
 
+            // Mapping
+            //UserViewModel viewModel = (UserViewModel) user;
+            //Console.WriteLine(viewModel.Id);
+            //Console.WriteLine(viewModel.FName);
+            //Console.WriteLine(viewModel.LName);
+            //Console.WriteLine(viewModel.Email);
+            //Console.WriteLine(viewModel.Password); 
+            #endregion
 
         }
     }
