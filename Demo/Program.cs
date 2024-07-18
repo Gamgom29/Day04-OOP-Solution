@@ -1,6 +1,7 @@
 ﻿using Demo.Abstraction;
 using Demo.Casting_Operator_Overloading;
 using Demo.Operators_Overloading;
+using Demo.Partial;
 using Demo.Sealed;
 using Demo.Static;
 
@@ -139,6 +140,13 @@ namespace Demo
             //str = new("Mohamed"); 
             #endregion
 
+            Employee employee = new Employee()
+            {
+                Id = 1, 
+                Name = "Test",
+                Address = "Giza",
+                Age = 20
+            };
         }
     }
 }
