@@ -20,9 +20,9 @@ namespace Assignment.Project03
         }
         public Duration(int Seconds)
         {
-            this.Hours = Seconds /= 3600;
-            this.Minutes = Seconds /= 60;
-            this.Seconds = Seconds ;
+            this.Hours = Seconds / 3600;
+            this.Minutes = (Seconds%3600) / 60 ;
+            this.Seconds = (Seconds) %60 ;
             
         }
 
