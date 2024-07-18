@@ -29,6 +29,10 @@ namespace Assignment
                 else 
                     P2 = new Point3D(X, Y,Z);
             }
+
+            //if(P1 == P2)
+            //    Console.WriteLine("P1 Equal P2");
+            // It Dosenot work Because We Don't Overload the == Operator 
             #endregion
         }
     }
