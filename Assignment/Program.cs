@@ -1,4 +1,5 @@
 ﻿using Assignment.Project01;
+using Assignment.Project02;
 
 namespace Assignment
 {
@@ -57,6 +58,15 @@ namespace Assignment
             //Point3D P1 = new Point3D(10, 20, 30);
             //Point3D P2 = (Point3D) P1.Clone(); 
             #endregion
+            #endregion
+
+            #region Project02
+            Console.WriteLine($"3 * 5 = {Maths.Multiply(3,5)}");
+            Console.WriteLine($"3 + 5 = {Maths.Add(3, 5)}");
+            Console.WriteLine($"3 - 5 = {Maths.Subtract(3, 5)}");
+            Console.WriteLine($"10 / 5 = {Maths.Add(10, 5)}");
+
+
             #endregion
         }
     }
