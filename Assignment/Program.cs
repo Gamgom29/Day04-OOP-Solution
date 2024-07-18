@@ -69,19 +69,42 @@ namespace Assignment
             #endregion
 
             #region Project03
-            //Duration D1 = new Duration(1, 10, 15);
+            Duration? D1 = new Duration(0, 59, 0);
             //Console.WriteLine(D1.ToString());
 
             //Duration D1 = new Duration(3600);
             //Console.WriteLine(D1.ToString());
 
-            //Duration D2 = new Duration(7800);
+            Duration? D2 = new Duration(7800);
             //Console.WriteLine(D2.ToString());
 
-            //Duration D3 = new Duration(666);
+            Duration? D3 = new Duration(666);
             //Console.WriteLine(D3.ToString());
 
+            //D3 = D1 + D2;
+            //Console.WriteLine(D3);
 
+            //D3 = D1 + 7800;
+            //Console.WriteLine(D3);
+
+            //D3 = 3600 + D1;
+            //Console.WriteLine(D3);
+
+            //D3 = ++D1
+            //D3 = --D2;
+            //if(D1 > D2)
+            //    Console.WriteLine("D1 Is Greater");
+            //if (D1 <= D2)
+            //    Console.WriteLine("D2 Is Greater than OR Equal");
+
+            /*Duration? D = default;
+            if(D)
+                Console.WriteLine("D1 is not null");
+            else
+                Console.WriteLine("D1 Is Null");*/
+
+            /*DateTime DT = (DateTime)D1;
+            Console.WriteLine(DT);*/
             #endregion
         }
     }
