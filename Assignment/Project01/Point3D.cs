@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Assignment.Project01
 {
-    internal class Point3D
+    internal class Point3D : IComparable
     {
         public int X { get; set; }
         public int Y { get; set; }
@@ -29,6 +29,15 @@ namespace Assignment.Project01
         public override string ToString()
         {
             return $"({X} , {Y} , {Z})";
+        }
+
+        public int CompareTo(object? obj)
+        {
+            Point3D? P = (Point3D?)obj;
+            if(this.X == P?.X)
+                return this.Y.CompareTo(P?.Y);
+            else 
+                return this.X.CompareTo(P?.X);
         }
     }
 }
